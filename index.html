@@ -1,37 +1,62 @@
-<html>
-  <head>
-    <title></title>
-  </head>
-  <body>
-    <table border = "1" cellspacing="0" style= "width : 300px; height : 200px; text-align : center">
-      <tr>
-        <th> 번호 </th>
-        <th> 상품명 </th>
-        <th> 수량 </th>
-        <th> 가격 </th>
-      </tr>
-      <tr>
-        <td> 1 </td>
-        <td> 콜라 </td>
-        <td>1개</td>
-        <td>1,500원</td>
-      </tr>
-      <tr>
-        <td> 2 </td>
-        <td> 사이다 </td>
-        <td>2개</td>
-        <td rowspan="2">1,000원</td>
-      </tr> 
-      <tr>
-        <td> 3 </td>
-        <td> 탄산수 </td>
-        <td>3개</td>
-      
-      </tr> 
-      
-      
-      
-    
-    </table> 
-  </body>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내 영화 보드</title>
+  <!-- 구글 폰트 <link> 두세 줄을 여기에 붙여 넣기 --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <h1>내 영화 보드</h1>
+
+  <article class="card {
+    width: 260px; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
+    background: #fff;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    rgba(255,193,7,0.6)}>  
+    .card:hover { 
+        transform: translateY(-8px); 
+        box-shadow: 0 12px 32px rgba(255,193,7,0.6); }"
+
+     <img class= "poster { 
+        width: 100%; 
+        display: block; 
+        aspect-ratio: 2 / 3; 
+        object-fit: cover; }  
+        aspect-ratio  object-fit "
+        src="https://image.tmdb.org/t/p/w342/cVNasmF1Egd3v3mpq747Hizxx4x.jpg" alt="영화 제목 포스터">
+
+    <span class="badge {
+     position: absolute; 
+        top: 12px; right: 12px; 
+        background: #ffc107; 
+        color: #222; 
+        padding: 4px 10px; 
+        border-radius: 999px; 
+        font-weight: bold; }"
+        >8.2</span>
+
+    <div class="padding: 12px 16px;">
+      <h2>제목</h2>
+      <p class="year">1994-09-14</p>
+      <p class="overview">한 손엔 우유 2팩이 든 가방, 다른 한 손엔 화분을 들고 뿌리 없이 떠도는 킬러 레옹은 어느 날 옆 집 소녀 마틸다의 일가족이 몰살 당하는 것을 목격한다. 그 사이 심부름을 갔다 돌아 온 마틸다는 가족들이 처참히 몰살 당하자 레옹에게 도움을 청한다. 가족의 원수를 갚기 위해 킬러가 되기로 결심한 12세 소녀 마틸다는 레옹에게 글을 알려주는 대신 복수하는 법을 배우고, 그 사이 레옹에 대한 사랑을 키워나간다. 드디어 그녀는 가족을 죽인 사람이 부패한 마약 경찰 스탠스임을 알게 되고, 홀로 그의 사무실로 향하게 되는데...</p>
+    </div>
+  </article>
+  <footer>
+    <p>이 사이트는 TMDB API를 사용하지만 TMDB의 보증이나 인증을 받지 않았습니다.
+       This product uses the TMDB API but is not endorsed or certified by TMDB.</p>
+    <p>포스터와 영화 정보: TMDB (https://www.themoviedb.org)</p>
+  </footer>
+</body>
 </html>
